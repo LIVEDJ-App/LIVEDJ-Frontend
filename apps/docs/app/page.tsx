@@ -59,7 +59,7 @@ export default function Home() {
           <Image
             aria-hidden
             src="/file-text.svg"
-            alt="File icon"
+            alt="File con"
             width={16}
             height={16}
           />
