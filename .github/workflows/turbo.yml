@@ -1,4 +1,4 @@
-name: Turbo Check
+name: NextJS Turbo Check
  
 on:
   push:
