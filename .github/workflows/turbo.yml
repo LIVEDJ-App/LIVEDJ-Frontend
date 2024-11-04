@@ -2,9 +2,11 @@ name: NextJS Turbo Check
  
 on:
   push:
-    branches: ["main"]
+    branches:
+      - '**'   
   pull_request:
-    types: [opened, synchronize]
+    branches:
+      - '**'
  
 jobs:
   build:
