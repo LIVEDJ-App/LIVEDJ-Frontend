@@ -1,24 +1,20 @@
 import Image from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import ProfileClient from "./pages/profile";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
+        <ProfileClient/>
         <ol>
           <li>
-            Get started by editing <code>app/page.tsx</code>
+            <a href="/api/auth/login">Login</a>
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li>
+            <a href="/api/auth/logout">Logout</a>
+          </li>
         </ol>
 
         <div className={styles.ctas}>
